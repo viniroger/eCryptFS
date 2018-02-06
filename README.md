@@ -42,12 +42,12 @@ Uma vez feito todo o processo de preparação dos diretórios para serem criptog
 
 Para facilitar o processo além do eCryptFS.rex escrevi um modelo que, uma vez personalizado para um determinado diretório criptografado, faz todo o processo somente solicitando a senha para decriptar a frase secreta. O script Modelo_monta_desmonta_diretorio.rex (clique no link do final do post para baixá-lo) deve ter as seguintes alterações:
 
-/*****  Substitua os conteúdos das variáveis abaixo   \*****/
-/*****  Início das alterações a serem feitas no modelo \*****/
+*** Substitua os conteúdos das variáveis abaixo ***
+*** Início das alterações a serem feitas no modelo ***
 diretorio_origem  = "Coloque aqui, entre as aspas, o diretório dos dados criptografados, incluindo o caminho absoluto"
 diretorio_destino = "Coloque aqui, entre as aspas, o diretório dos dados montado para uso, incluindo o caminho absoluto"
 arquivo_frase_secreta = "Coloque aqui, entre as aspas, o arquivo onde foi armazenada a frase secreta, incluindo o caminho absoluto"
-/*****  Fim das alterações a serem feitas no modelo \********/
+*** Fim das alterações a serem feitas no modelo ***
 
 Feitas as alterações acima, ele deve ser gravado com algum nome escolhido a gosto de quem personalizar o processo. No caso de ser gravado com o nome de MontaDiretorioSecreto.rex, a execução para montagem será (não esqueça de torná-lo executável com o comando "chmod +x"):
 
